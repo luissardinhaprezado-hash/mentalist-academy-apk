@@ -5,7 +5,7 @@
   "description": "Academia interativa de observação, raciocínio e comunicação",
   "scripts": {
     "web:serve": "vite --host 0.0.0.0",
-    "web:build": "vite build",
+    "web:build": "mkdir -p dist && cp -r www/. dist/",
     "android:add": "cap add android",
     "android:sync": "cap sync android",
     "android:open": "cap open android"
